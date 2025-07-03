@@ -1,4 +1,3 @@
-
 import './App.css'
 import DigitalClock from './Component/DigitalClock'
 
@@ -12,3 +11,5 @@ function App() {
 }
 
 export default App
+
+
