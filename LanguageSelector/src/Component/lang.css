@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(3, 17, 51);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;   
+    background-color: antiquewhite;  
+}
+
+p{
+    display: inline-flex;
+}
