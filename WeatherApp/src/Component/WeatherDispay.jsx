@@ -1,15 +1,15 @@
 import { WiDegrees } from "react-icons/wi";
 import { FaWind } from "react-icons/fa6";
 import { WiHumidity } from "react-icons/wi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-function WeatherDispay({ weatherData, isLoading, city, error }) {
-// console.log(weatherData?.current?.condition?.text)
+function WeatherDispay({ weatherData, isLoading }) {
   return (
     <div>
       {isLoading == true ? (
-        <div className="relative">loading...</div>
+        <div className="relative text-4xl font-semibold animate-spin text-blue-800"><AiOutlineLoading3Quarters/></div>
       ) : (
-        <div className="relative flex-col justify-center place-items-center -mt-36 text-gray-950">
+        <div className="relative flex-col justify-center place-items-center -mt-36 text-gray-950 ">
           <img
             src={weatherData?.current?.condition?.icon}
             alt="Weather-Image"
